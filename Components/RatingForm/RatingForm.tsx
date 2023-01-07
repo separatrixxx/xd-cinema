@@ -70,7 +70,7 @@ export const RatingForm = ({ movie }: RatingFormProps): JSX.Element => {
 	if (totalRatingCount) {
         return (
             <div className={styles.ratingForm}>
-                <Htag tag='xl'>{(totalRating/totalRatingCount).toFixed(1)}/10</Htag>
+                <Htag tag='xl'>{(Math.floor((totalRating / totalRatingCount) * 10) / 10 )}/10</Htag>
                 <Htag tag='s'>Оценили фильм <span className={styles.ratingCount}>{totalRatingCount}</span></Htag>
                 <div className={styles.ratingBody}>
                     {ratingArr.map(r => (
@@ -82,7 +82,7 @@ export const RatingForm = ({ movie }: RatingFormProps): JSX.Element => {
     } else {
         return (
             <div className={styles.ratingForm}>
-                <Htag tag='xl'>0/10</Htag>
+                <Htag tag='xl'>Фильм ещё никто не оценил</Htag>
                 <Htag tag='s'>Оценили фильм <span className={styles.ratingCount}>{totalRatingCount}</span></Htag>
                 <div className={styles.ratingBody}>
                     {ratingArr.map(r => (
