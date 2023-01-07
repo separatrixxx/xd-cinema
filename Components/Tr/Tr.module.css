@@ -1,0 +1,32 @@
+.td {
+		padding-top: 10px;
+		border-style: none;
+}
+
+.text1 {
+	color: var(--grey-text);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 0;
+}
+
+.text2 {
+	color: var(--white);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 0;
+	margin-left: 28px;
+}
+
+@media (max-width: 1024px) {
+	.text1 {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+
+	.text2 {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		margin-left: 20px;
+	}
+}

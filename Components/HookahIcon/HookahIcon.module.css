@@ -1,0 +1,25 @@
+.hookah {
+    color: var(--white);
+    position: fixed;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 20px;
+    right: 0;
+    bottom: 0;
+    transition-duration: 300ms;
+}
+
+.hookah:hover {
+    color: var(--grey-text);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+@media (max-width: 480px) {
+    .hookah {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin: 10px;
+    }
+}

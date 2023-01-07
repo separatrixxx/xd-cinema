@@ -1,0 +1,12 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 176px 1fr 176px;
+	grid-template-areas:
+	". layoutContent .";
+	justify-content: center;
+	margin-top: 70px;
+}
+
+.wrapperContent {
+	grid-area: layoutContent;
+}
