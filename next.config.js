@@ -1,6 +1,6 @@
 module.exports = {
 	images: {
-		domains: ['courses-top.ru']
+		domains: ['xd-cinema.vercel.app']
 	},
 	webpack(config, options) {
 		config.module.rules.push({
