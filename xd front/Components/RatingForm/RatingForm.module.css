@@ -1,0 +1,44 @@
+.ratingForm {
+    margin-top: 40px;
+}
+
+.ratingForm > h1 {
+    color: var(--primary);
+}
+
+.ratingCount {
+    color: var(--grey-text);
+}
+
+.ratingBody {
+    width: max-content;
+    background: var(--grey-text);
+    display: grid;
+    grid-template-columns: repeat(10, max-content);
+    gap: 15px;
+    padding: 1px 15px 1px 15px;
+    border-radius: 12px;
+}
+
+.ratingBody > h1 {
+    width: max-content;
+    color: rgb(115 115 115);
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.ratingBody > h1:hover {
+    color: var(--white);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+@media (max-width: 480px) {
+    .ratingBody > h1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

@@ -1,0 +1,49 @@
+.watchButton {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	gap: 7px;
+	padding: 10px 20px 10px 20px ;
+	background: var(--primary);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	justify-content: center;
+	align-content: center;
+	border-radius: 12px;
+	color: var(--white);
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.watchButton > p {
+	margin: 0;
+}
+
+.watchButton:hover {
+	background: var(--dark-blue);
+	transform: scale(1.05);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+@media (max-width: 1024px) {
+	.watchButton {
+		margin-top: 5px;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.watchButton {
+		margin-top: 0;
+		padding: 3px 10px 3px 10px;
+		border-radius: 6px;
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+}

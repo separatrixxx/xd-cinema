@@ -1,0 +1,123 @@
+.notFound {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	color: var(--white);
+	transition-duration: 300ms;
+}
+
+.notFound:hover {
+	color: rgb(209 213 219);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.genre {
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.75rem;
+	color: var(--white);
+	margin: 0;
+	margin-bottom: 12px;
+	grid-row-start: 2;
+	grid-row-end: -1;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	color: var(--white);
+	margin: 0;
+	transition-duration: 300ms;
+}
+
+.logo:hover {
+	color: var(--primary);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.xl {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1;
+	color: var(--white);
+	margin: 0;
+}
+
+.l {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	color: var(--white);
+}
+
+.m {
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 1.75rem;
+	color: var(--white);
+}
+
+.s {
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1rem;
+	color: var(--white);
+}
+
+@media (max-width: 1024px) {
+	.notFound {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}	
+
+	.logo {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.xl {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	.l {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+	
+	.m {
+		font-size: 1.25rem;
+		line-height: 1.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.notFound {
+		font-size: 1.2rem;
+		line-height: 1.7rem;
+	}
+	
+	.genre {
+		font-size: 0.75rem;
+		line-height: 1rem;
+		margin-bottom: 4px;
+	}
+
+	.xl {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.l {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.m {
+		font-size: 0.875rem;
+		line-height: 0.875rem;
+	}
+}

@@ -1,0 +1,55 @@
+.movieMainInfo {
+	margin-bottom: 40px;
+	align-items: start;
+	display: grid;
+	grid-template-columns: 18rem auto;
+}
+
+.cover {
+	background: var(--primary);
+	width: 18rem;
+	height: 26rem;
+	border-radius: 12px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.info {
+	margin-left: 40px;
+}
+
+.description {
+	color: white;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+	.info {
+		margin-top: 20px;
+	}
+
+	.movieMainInfo {
+		justify-items: center;
+		grid-template-columns: 1fr;
+	}
+
+	.info {
+		margin-left: 0;
+	}
+
+	.description {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.movieMainInfo {
+		justify-items: center;
+		grid-template-columns: 18rem;
+	}
+}

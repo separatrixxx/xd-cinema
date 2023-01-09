@@ -1,0 +1,92 @@
+.form {
+	display: grid;
+	grid-template-columns: auto;
+	background: var(--white);
+	border-radius: 12px;
+	justify-items: center;
+	padding: 40px;
+	gap: 20px;
+}
+
+.h {
+	font-weight: 700;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	margin: 0;
+	margin-bottom: 20px;
+	color: var(--primary);
+}
+
+.p {
+	color: var(--grey-text);
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.link {
+	color: var(--grey-text);
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0;
+	transition-duration: 300ms;
+}
+
+.link:hover {
+	color: var(--primary);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.button {
+	width: 100%;
+	color: var(--white);
+	background: var(--primary);
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 12px;
+	transition-duration: 300ms;
+}
+
+.button:hover {
+	background: var(--dark-blue);
+	transform: scale(1.05);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.label {
+	position: relative;
+}
+
+.icon {
+	color: var(--grey-text);
+	cursor: pointer;
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+	right: 0;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	margin-right: 8px;
+	transition-duration: 300ms;
+}
+
+.icon:hover {
+	color: var(--primary);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+@media (max-width: 480px) {
+	.form {
+		padding: 30px;
+	}
+}

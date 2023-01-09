@@ -1,0 +1,80 @@
+.commentsForm {
+    display: grid;
+    margin-top: 40px;
+}
+
+.textarea {
+    width: 51%;
+    max-width: 820px;
+    height: 100px;
+    resize: vertical;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition-duration: 300ms;
+}
+
+.textarea:hover {
+	background: rgb(229 231 235);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.textarea:focus {
+	outline: none;
+    color: var(--primary);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.button {
+	width: 256px;
+	color: var(--white);
+	background: var(--primary);
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 12px;
+    margin-top: 20px;
+	transition-duration: 300ms;
+}
+
+.button:hover {
+	background: var(--dark-blue);
+	transform: scale(1.05);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+@media (max-width: 1024) {
+    .textarea {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textarea {
+        width: 100%;
+        max-width: 270px;
+        height: 75px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .button {
+        width: 192px;
+    }
+}
+
+@media (max-width: 300px) {
+    .textarea {
+        width: 100%;
+        max-width: 220px;
+    }
+}
