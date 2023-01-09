@@ -1,0 +1,37 @@
+{
+  "name": "xd-cinema",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.0.7",
+    "@react-three/drei": "^9.50.4",
+    "@react-three/fiber": "^8.10.0",
+    "@svgr/webpack": "^6.5.1",
+    "@types/react-dom": "^18.0.9",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7",
+    "next": "13.0.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "^0.148.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "axios": "^1.2.2",
+    "bcrypt": "^5.1.0",
+    "date-fns": "^2.29.3",
+    "fs": "^0.0.1-security",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.1",
+    "react-scroll-into-view": "^1.12.0",
+    "typescript": "^4.9.4"
+  }
+}
