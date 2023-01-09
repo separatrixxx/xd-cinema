@@ -1,0 +1,16 @@
+.wrapper {
+    margin-top: 100px;
+    display: grid;
+	grid-template-columns: 176px 1fr 176px;
+	grid-template-areas:
+	". wrapperContent .";
+	justify-content: center;
+}
+
+.wrapperContent {
+	grid-area: wrapperContent;
+}
+
+.list {
+    margin: 40px 0 40px 0;
+}

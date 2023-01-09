@@ -1,0 +1,29 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 176px 1fr 176px;
+	grid-template-areas:
+	". layoutContent .";
+	justify-content: center;
+}
+
+.layoutContent {
+	grid-area: layoutContent;
+}
+
+@media (max-width: 1600px) {
+	.wrapper {
+		grid-template-columns: 130px 1fr 130px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		grid-template-columns: 100px 1fr 100px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		grid-template-columns: 40px 1fr 40px;
+	}
+}

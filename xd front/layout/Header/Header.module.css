@@ -1,0 +1,18 @@
+.header {
+	z-index: 1;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 10% auto;
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(4px);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 12px 27px 12px 27px;
+	transition: transform .3s linear;
+}
+
+.link {
+	justify-self: right;
+}

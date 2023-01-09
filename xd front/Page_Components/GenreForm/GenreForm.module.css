@@ -1,0 +1,66 @@
+.genreForm {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 256px);
+	gap: 40px;
+	justify-content: space-between;
+}
+
+.movieCard {
+	width: 256px;
+	height: 384px;
+	border-radius: 12px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	user-select: none;
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.movieCard:hover {
+	transform: scale(1.05);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 176px 1fr 176px;
+	grid-template-areas:
+	". layoutContent .";
+	justify-content: center;
+	margin-top: 70px;
+}
+
+.wrapperContent {
+	grid-area: layoutContent;
+}
+
+@media (max-width: 1600px) {
+	.wrapper {
+		grid-template-columns: 130px 1fr 130px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		grid-template-columns: 100px 1fr 100px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		grid-template-columns: 40px 1fr 40px;
+		margin-top: 60px;
+	}
+
+	.genreForm {
+		grid-template-columns: repeat(auto-fit, 128px);
+		gap: 20px;
+	}
+	
+	.movieCard {
+		width: 128px;
+		height: 192px;
+	}
+}
