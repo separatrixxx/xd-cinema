@@ -1,27 +1,14 @@
 import axios, { AxiosResponse } from 'axios';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import { formatSearch } from '../helpers/helpers_format';
 import { MoviesItem } from '../interfaces/movies.interface';
+import { withLayout } from '../layout/Layout';
 import { SearchForm } from '../Page_Components/SearchForm/SearchForm';
 
-export const Search = () => {
+export const Search = ({ movies }: MoviesProps) => {
 	const router = useRouter();
 	const { search } = router.query;
-	
-	let [movies] = useState<MoviesItem[]>([]);
-
-    axios.get(process.env.NEXT_PUBLIC_DOMAIN + '/movie/get/title/?name=' + formatSearch(search as string))
-        .then((response) => {
-            if (response.data[0]) {
-                for (let item of response.data) {
-                    movies.push(item);
-                }
-            }
-        });
-
-	console.log(movies)
 
 	if (search) {
 		return (
@@ -42,3 +29,16 @@ export const Search = () => {
 }
 
 export default Search;
+
+export const getStaticProps: GetStaticProps<MoviesProps> = async () => {
+	let { data: movies }: AxiosResponse<MoviesItem[]> = await axios.get(process.env.NEXT_PUBLIC_DOMAIN + '/movie/get/all');
+	return {
+	  props: {
+		movies: movies.reverse(),
+	  }
+	};
+  };
+  
+  interface MoviesProps extends Record<string, unknown> {
+	movies: MoviesItem[];
+  }
