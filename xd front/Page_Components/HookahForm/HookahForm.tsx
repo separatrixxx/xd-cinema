@@ -9,7 +9,7 @@ import {Canvas} from "@react-three/fiber";
 export const HookahForm = (): JSX.Element => {
 	return (
 		<div className={styles.wrapper}>
-			<Header searchInput={true} />
+			<Header searchInput={false} />
 			<div className={styles.wrapperContent}>
                 <Canvas className="z-10 mx-10"
                     camera={{ position: [1, 0, 10], fov: 15 }}
