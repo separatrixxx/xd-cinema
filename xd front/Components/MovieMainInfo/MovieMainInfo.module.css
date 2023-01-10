@@ -2,13 +2,13 @@
 	margin-bottom: 40px;
 	align-items: start;
 	display: grid;
-	grid-template-columns: 18rem auto;
+	grid-template-columns: 288px auto;
 }
 
 .cover {
 	background: var(--primary);
-	width: 18rem;
-	height: 26rem;
+	width: 288px;
+	height: 416px;
 	border-radius: 12px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -50,6 +50,6 @@
 @media (max-width: 480px) {
 	.movieMainInfo {
 		justify-items: center;
-		grid-template-columns: 18rem;
+		grid-template-columns: 288px;
 	}
 }

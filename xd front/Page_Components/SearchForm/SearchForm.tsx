@@ -5,6 +5,7 @@ import { MovieSearchProps, MoviesItem } from '../../interfaces/movies.interface'
 import Link from 'next/link';
 import { Htag } from '../../Components/Htag/Htag';
 import { formatSearch } from '../../helpers/helpers_format';
+import Image from 'next/image'
 
 export const SearchForm = ({ movies, search }: MovieSearchProps): JSX.Element => {
 	let moviesNew: MoviesItem[] = [];
@@ -27,9 +28,14 @@ export const SearchForm = ({ movies, search }: MovieSearchProps): JSX.Element =>
 					{
 							moviesNew.map(movie => (
 								<Link key={movie.id} href={`/movie/${movie.id}`}>
-									<div className={styles.movieCard} style={{
-										backgroundImage: `url(${movie.cover})`
-									}}>
+									<div className={styles.movieCard}>
+										<Image className={styles.movieCard}
+											loader={() => movie.cover}
+											src={movie.cover}
+											alt={movie.title + " movie cover"}
+											width={256}
+											height={384}
+										/>
 									</div>
 								</Link>
 							))

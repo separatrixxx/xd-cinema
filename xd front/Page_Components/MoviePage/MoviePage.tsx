@@ -28,9 +28,7 @@ export const MoviePage = ({ movie, genres, country }: MovieInfoProps): JSX.Eleme
 					onClick={() => window.location.reload()}>
 						<Htag tag='m'>Если загрузка не произошла, нажмите на плеер</Htag>
 					</div>
-				<Script src="https://yohoho.cc/yo.js" onLoad={() => {
-					console.log('gg')
-				}}/>
+				<Script src="https://yohoho.cc/yo.js"/>
 				<RatingForm movie={movie} />
 				<CommentsForm movie={movie} />
 				<Footer />
