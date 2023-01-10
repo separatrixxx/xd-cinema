@@ -6,6 +6,7 @@ import { MovieGenreProps } from '../../interfaces/movies.interface';
 import { genreEdToMn } from '../../helpers/helpers_genres';
 import Link from 'next/link';
 import { Htag } from '../../Components/Htag/Htag';
+import Image from 'next/image'
 
 export const GenreForm = ({ movies, genre, notFound }: MovieGenreProps): JSX.Element => {
 	if (notFound) {
@@ -24,9 +25,14 @@ export const GenreForm = ({ movies, genre, notFound }: MovieGenreProps): JSX.Ele
 						{
 							movies.map(movie => (
 								<Link key={movie.id} href={`/movie/${movie.id}`}>
-									<div className={styles.movieCard} style={{
-										backgroundImage: `url(${movie.cover})`
-									}}>
+									<div className={styles.movieCard}>
+										<Image className={styles.movieCard}
+											loader={() => movie.cover}
+											src={movie.cover}
+											alt={movie.title + " movie cover"}
+											width={256}
+											height={384}
+										/>
 									</div>
 								</Link>
 							))
