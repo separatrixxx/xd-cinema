@@ -19,10 +19,9 @@ export const AboutPage = (): JSX.Element => {
                 </div>
                 <Htag tag='xl'>Что пока не реализовано:</Htag>
                 <div className={styles.list}>
-                    <Htag tag='m'>1. Поиск фильмов</Htag>
-                    <Htag tag='m'>2. Сортировка фильмов по популярности</Htag>
-                    <Htag tag='m'>3. Инфомация о режиссёрах</Htag>
-                    <Htag tag='m'>4. Изображение профиля</Htag>
+                    <Htag tag='m'>1. Сортировка фильмов по популярности</Htag>
+                    <Htag tag='m'>2. Инфомация о режиссёрах</Htag>
+                    <Htag tag='m'>3. Изображение профиля</Htag>
                 </div>
                 <Htag tag='xl'>Что стоит знать (данные Google Lighthouse):</Htag>
                 <div className={styles.list}>
