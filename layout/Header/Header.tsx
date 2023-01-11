@@ -30,7 +30,7 @@ export const Header = ({ searchInput }: HeaderProps): JSX.Element => {
 					<Link href="/" className={styles.link}>
 						<Htag tag='logo'>[xd]</Htag>
 					</Link>
-					<SearchAndUser link={link} className={styles.searchAndUser} />
+					<SearchAndUser userId={userId} link={link} className={styles.searchAndUser} />
 				</header>
 			);
 		default:
