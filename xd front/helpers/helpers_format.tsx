@@ -47,7 +47,7 @@ export function formatDateReg(registration_date: string): string {
 	let dayNew;
 
 	let year = registration_date.slice(0, 4);
-	let month = +(registration_date.slice(5, 7)) + 1;
+	let month = +(registration_date.slice(5, 7));
 	let day = registration_date.slice(8, 10);
 	let firstNumberOfDay = registration_date.slice(8, 9);
 	let secondNumberOfDay =  registration_date.slice(9, 10);
@@ -69,7 +69,7 @@ export function formatDateComment(registration_date: string): string {
 	let dayNew;
 
 	let year = registration_date.slice(0, 4);
-	let month = +(registration_date.slice(5, 7)) + 1;
+	let month = +(registration_date.slice(5, 7));
 	let day = registration_date.slice(8, 10);
 	let firstNumberOfDay = registration_date.slice(8, 9);
 	let secondNumberOfDay =  registration_date.slice(9, 10);
