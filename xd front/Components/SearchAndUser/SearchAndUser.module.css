@@ -64,13 +64,17 @@
 	font-size: 36px;
 	width: 36px;
 	height: 36px;
+	line-height: 36px;
+	font-weight: 500;
 	padding: 3px;
 	cursor: pointer;
 	border-radius: 9999px;
 	transition-duration: 300ms;
 	border: 3px solid var(--primary);
 	grid-area: user;
+	align-items: center;
 }
+
 
 
 .user:hover {
