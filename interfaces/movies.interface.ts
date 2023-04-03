@@ -36,15 +36,15 @@ export interface UserItem {
 
 export interface CommentItem {
 	id: number,
-    movie_id: number,
-    user_id: number,
-    user_name: string,
-    text: string,
-    publication_date: string
+	movie_id: number,
+	user_id: number,
+	user_name: string,
+	text: string,
+	publication_date: string
 }
 
 export interface RatingItem {
-    movie_id: number,
-    user_id: number,
+	movie_id: number,
+	user_id: number,
 	rate: number,
 }
